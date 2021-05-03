@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const breakerSchema = new Schema({
+const userSchema = new Schema({
 
     firstName: {
         type: String,
@@ -18,10 +18,14 @@ const breakerSchema = new Schema({
     phone: {
         type: String,
         required: null
+    },
+    company: {
+        type: String,
+        require: null
     }
 });
 
 
-const Post = mongoose.model("Post", breakerSchema);
+const User = mongoose.model("User", userSchema);
 
-module.exports = Post;
+module.exports = User;

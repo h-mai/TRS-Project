@@ -2,26 +2,18 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const menderSchema = new Schema({
-    firstName: {
+    
+    name: {
         type: String,
         required: true
-    },
-    lastName: {
-        type: String,
-        required: true
-    },
-    company: {
-        type: String,
-        required: null
     },
     address: {
         type: String,
         required: true
     },
-    openingDays: {
+    openingDays: [{
         type: String,
-        required: true
-    }, //drop down options day and 24hr time
+    }], //drop down options day and 24hr time
     openingHours: {
         type: String,
         required: true
@@ -36,6 +28,6 @@ const menderSchema = new Schema({
     }
 });
 
-const Post = mongoose.model("Post", menderSchema);
+const Company = mongoose.model("Company", menderSchema);
 
-module.exports = Post;
+module.exports = Company;

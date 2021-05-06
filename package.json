@@ -24,7 +24,10 @@
     "cors": "^2.8.5",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "moment": "^2.29.1",
+    "moment-opening-times": "^2.10.0",
     "mongoose": "^5.3.16",
+    "react-date-scroll": "^1.1.0",
     "react-router-dom": "^5.2.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3"

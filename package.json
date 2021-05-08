@@ -29,6 +29,7 @@
     "mongoose": "^5.3.16",
     "react-date-scroll": "^1.1.0",
     "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3"
   }

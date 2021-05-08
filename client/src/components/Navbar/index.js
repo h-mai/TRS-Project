@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import { Icon, Input, Menu } from 'semantic-ui-react'
 
-export default class MenuExampleSizeSmall extends Component {
+export default class Navigation extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -10,33 +11,35 @@ export default class MenuExampleSizeSmall extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu size='small'>
-        <Menu.Item
+      <Menu icon>
+
+        <Menu.Item as={Link} to='/'
           name='home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
-        />
-       
+        >
+          <Icon name='cut' />
+          TRS | THE REPAIR SOCIETY
+        </Menu.Item>
 
         <Menu.Menu position='right'>
-          {/* <Dropdown item text='Language'>
-            <Dropdown.Menu>
-              <Dropdown.Item>English</Dropdown.Item>
-              <Dropdown.Item>Russian</Dropdown.Item>
-              <Dropdown.Item>Spanish</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown> */}
-           <Menu.Item
-          name='Login'
-          active={activeItem === 'Login'}
-          onClick={this.handleItemClick}
-        />
-
-          <Menu.Item>
-            <Button primary>Sign Up</Button>
+          <Menu.Item as={Link} to='/search'>
+          <Input icon='search' placeholder='Search...' />
           </Menu.Item>
-        </Menu.Menu>
-      </Menu>
+
+          <Menu.Item as={Link} to='/signUp'
+            name='Sign Up'
+            active={activeItem === 'Sign Up'}
+            onClick={this.handleItemClick}
+          >
+            <Icon name='user' />
+
+          </Menu.Item>
+
+        </Menu.Menu >
+
+      </Menu >
+
     )
   }
 }

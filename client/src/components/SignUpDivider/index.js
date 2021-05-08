@@ -1,16 +1,11 @@
 import React from 'react'
-import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Search,
-  Segment,
-} from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import {Button, Divider, Grid, Header, Icon, Search, Segment,} from 'semantic-ui-react'
 
-const SegmentExamplePlaceholderGrid = () => (
+const signUpDivider = () => (
+
   <Segment placeholder>
+      
     <Grid columns={2} stackable textAlign='center'>
       <Divider vertical>Or</Divider>
 
@@ -25,15 +20,16 @@ const SegmentExamplePlaceholderGrid = () => (
         </Grid.Column>
 
         <Grid.Column>
-          <Header icon>
-            <Icon name='world' />
+          <Header >
+            <Icon name='user' />
             Sign in 
           </Header>
-          <Button primary>Create</Button>
+        <Button primary as={Link} to="/createaccount">Create</Button>
+                    
         </Grid.Column>
       </Grid.Row>
     </Grid>
   </Segment>
 )
 
-export default SegmentExamplePlaceholderGrid
+export default signUpDivider

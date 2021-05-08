@@ -1,14 +1,24 @@
 import React from "react";
-import { Divider, Grid, Image, Segment } from 'semantic-ui-react'
+import { Divider, Grid, Image, Search, Segment } from 'semantic-ui-react'
+import "semantic-ui-css/semantic.min.css";
 
 const Home = () => {
     return (
         <Segment>
-            <Divider vertical>
+          
                 <Grid columns={2} relaxed="very">
-                    This is home page 
+                    <Grid.Column>
+                    left side
+                    {Search}
+
+                    </Grid.Column>
+                
+                    <Grid.Column>
+                    right side 
+                    </Grid.Column>
+
                 </Grid>
-            </Divider>
+            <Divider vertical></Divider>
         </Segment>
     )
 

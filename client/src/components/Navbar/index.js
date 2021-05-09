@@ -23,7 +23,7 @@ export default class Navigation extends Component {
         </Menu.Item>
 
         <Menu.Menu position='right'>
-          <Menu.Item as={Link} to='/search'>
+          <Menu.Item>
           <Input icon='search' placeholder='Search...' />
           </Menu.Item>
 

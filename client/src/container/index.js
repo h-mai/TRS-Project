@@ -1,15 +1,20 @@
-/* eslint-disable max-len */
+// /* eslint-disable max-len */
 
-import React from 'react'
-import { Container } from 'semantic-ui-react'
+// import React from 'react'
+// import { Container, Grid, Segment } from 'semantic-ui-react'
 
-const mainContainer = () => (
-  <div>
-    <Container fluid>
+// const mainContainer = () => (
+//   <div>
+//     <Container text>
+//       <Segment vertical>
+//         <Grid columns={2}>
+//           home page
+//         </Grid>
 
-  
-    </Container>
-  </div>
-)
+//       </Segment>
 
-export default mainContainer
+//     </Container>
+//   </div>
+// )
+
+// export default mainContainer

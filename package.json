@@ -28,6 +28,7 @@
     "moment-opening-times": "^2.10.0",
     "mongoose": "^5.3.16",
     "react-date-scroll": "^1.1.0",
+    "react-images": "^1.2.0-beta.7",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.1",
     "semantic-ui-css": "^2.4.1",

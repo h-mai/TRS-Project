@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Grid, Image, Segment, Button } from 'semantic-ui-react'
+import { Grid, Container } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css";
 import SearchBtn from '../components/SearchBtn'
 import PageMessage from '../components/PageMessages'
@@ -7,21 +7,30 @@ import PageMessage from '../components/PageMessages'
 
 const Home = () => {
     return (
-        <Segment>
+
+        <Container>
 
             <Grid columns={2} padded style={{ height: '100vh' }}>
+                <Grid.Column verticalAlign='middle'>
 
-                <Grid.Column>
-                    <PageMessage/>
-                    <SearchBtn/>
+                    <Grid.Row>
+                        <PageMessage />
+                    </Grid.Row>
+                    <Grid.Row padded style={{ height: '5vh' }}></Grid.Row>
+                    <Grid.Row>
+                        <SearchBtn />
+                    </Grid.Row>
+
                 </Grid.Column>
 
                 <Grid.Column>
 
                 </Grid.Column>
             </Grid>
-            <Divider vertical></Divider>
-        </Segment>
+
+        </Container>
+
+
     )
 }
 

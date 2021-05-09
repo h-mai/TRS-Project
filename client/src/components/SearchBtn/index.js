@@ -6,10 +6,10 @@ const SearchBtn = () => (
   <div>
 
     
-        <Button animated='fade' as={Link} to='/search'>
+        <Button animated as={Link} to='/search'>
       <Button.Content visible>Find a Fixer</Button.Content>
             <Button.Content hidden>
-            <Icon name='search' />
+            <Icon name='cut' />
       </Button.Content>
     </Button>
   </div>

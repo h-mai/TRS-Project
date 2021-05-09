@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
+import { Grid, Image, Segment } from 'semantic-ui-react'
 import renew from '../../images/renew.png'
 import repair from '../../images/repair.png'
 import repurpose from '../../images/repurpose.png'
@@ -7,13 +7,23 @@ import repurpose from '../../images/repurpose.png'
 const HomeMessage = () => {
 
     return (
-        <div>
-        <Image src={renew} />
-        <Image src={repair} />
-        <Image src={repurpose} />
-        </div>       
-    )
-     }
-
         
-export default  HomeMessage
+            <Grid >
+
+                <Grid.Row verticalAlign='top'>
+                    <Image src={renew} />
+                </Grid.Row>
+                <Grid.Row verticalAlign='center' >
+                    <Image src={repair} />
+                </Grid.Row>
+                <Grid.Row verticalAlign='bottom' >
+                    <Image src={repurpose} />
+                </Grid.Row>
+
+            </Grid>
+        
+    )
+}
+
+
+export default HomeMessage

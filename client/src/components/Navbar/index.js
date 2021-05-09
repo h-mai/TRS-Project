@@ -11,8 +11,8 @@ export default class Navigation extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu icon>
-
+      
+      <Menu >
         <Menu.Item as={Link} to='/'
           name='home'
           active={activeItem === 'home'}
@@ -39,7 +39,7 @@ export default class Navigation extends Component {
         </Menu.Menu >
 
       </Menu >
-
+    
     )
   }
 }

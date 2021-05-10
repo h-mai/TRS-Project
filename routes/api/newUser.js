@@ -8,7 +8,7 @@ router.route("/signup")
 
 // Matches with "/api/:id"
 router
-  .route("/:id")
+  .route("/signin")
   .get(userController.findById)
   .put(userController.update)
 //   .delete(userController.remove);

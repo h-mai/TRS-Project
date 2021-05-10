@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the booksController
+// Defining methods for the userController
 module.exports = {
     findAll: function (req, res) {
         db.Company
@@ -28,11 +28,4 @@ module.exports = {
     }
 };
 
-//   remove: function(req, res) {
-//     db.User
-//       .findById({ _id: req.params.id })
-//       .then(dbModel => dbModel.remove())
-//       .then(dbModel => res.json(dbModel))
-//       .catch(err => res.status(422).json(err));
-//   }
-// 
+

@@ -1,35 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {Button, Divider, Grid, Header, Icon, Search, Segment,} from 'semantic-ui-react'
+import { Button, Divider, Grid, Header, Icon, Container } from 'semantic-ui-react'
 
-const signUpDivider = () => (
+const signUpDivider = () => {
+  return (
 
-  <Segment placeholder>
-      
-    <Grid columns={2} stackable textAlign='center'>
-      <Divider vertical>Or</Divider>
+      <Container>
 
-      <Grid.Row verticalAlign='middle'>
-        <Grid.Column>
-          <Header icon>
-            <Icon name='search' />
-            Search Fixer 
+      <Grid columns={2}>
+        
+        <Grid.Column verticalAlign='middle'>
+
+        <Grid.Row>
+          <Header>
+          <Icon name='cut' />
+          TRS Members
           </Header>
+          <Button as={Link} to="/loginaccount">Login</Button>
+          </Grid.Row>
 
-          <Search placeholder='Search countries...' />
         </Grid.Column>
 
-        <Grid.Column>
+        <Grid.Column verticalAlign='middle'>
+
+        <Grid.Row>
           <Header >
-            <Icon name='user' />
-            Sign in 
+          <Icon name='user' />
+          Join TRS
           </Header>
-        <Button primary as={Link} to="/createaccount">Create</Button>
-                    
+          <Button as={Link} to="/createaccount">Signup</Button>
+          </Grid.Row>
+
         </Grid.Column>
-      </Grid.Row>
-    </Grid>
-  </Segment>
-)
+
+      </Grid>
+
+    </Container>
+
+
+  )
+}
 
 export default signUpDivider

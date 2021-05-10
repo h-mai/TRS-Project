@@ -13,4 +13,7 @@ router
   .put(userController.update)
 //   .delete(userController.remove);
 
+router
+  .get("/user/:id", userController.findById);
+
 module.exports = router;

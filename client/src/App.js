@@ -6,30 +6,27 @@ import Search from "./pages/search"
 import signUpDivider from "./components/SignUpDivider";
 import signUpForms from "./components/SignUpForm/newUserSignUp"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import { Container, Divider } from 'semantic-ui-react'
-
+import { Container } from 'semantic-ui-react'
+import ProfilePage from "./components/ProfilePage"
 
 function App() {
   return (
 
-    <div>
+  <div>
       <Container fluid>
-      <Router>
-        
+      <Router>        
         <NavBar></NavBar>
-        
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/search" component={Search}/>
           <Route exact path="/signUp" component={signUpDivider} />
           <Route exact path="/createaccount" component={signUpForms} />
+          <Route path="/profile/:id" component={ProfilePage} />
         </Switch>
-      
-        </Router>
-        </Container>
+     </Router>
+      </Container>
     </div>
-
-
+    
   );
 }
 

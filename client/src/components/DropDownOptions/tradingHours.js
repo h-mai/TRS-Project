@@ -20,8 +20,6 @@ import { Dropdown } from 'semantic-ui-react'
 //   saturday:  [ { opens: '', closes: '' } ],
 // }
 
-// //
-
 const openingHours = (number, suffix = 'am') =>
     _.times(number, (index) => ({
         key: index,

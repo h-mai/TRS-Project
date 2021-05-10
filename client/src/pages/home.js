@@ -14,11 +14,17 @@ const Home = () => {
                 <Grid.Column verticalAlign='middle'>
 
                     <Grid.Row>
+
                         <PageMessage />
+
                     </Grid.Row>
+
                     <Grid.Row padded style={{ height: '5vh' }}></Grid.Row>
+                    
                     <Grid.Row>
+
                         <SearchBtn />
+                        
                     </Grid.Row>
 
                 </Grid.Column>

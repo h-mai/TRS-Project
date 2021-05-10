@@ -3,13 +3,13 @@ const db = require("../models");
 // Defining methods for the userController
 module.exports = {
     findAll: function (req, res) {
-        db.Company
+        db.User
             .find(req.query)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
     findById: function (req, res) {
-        db.Company
+        db.User
             .findById(req.params.id)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
@@ -19,6 +19,7 @@ module.exports = {
             .create(req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
+            
     },
     update: function (req, res) {
         db.User
@@ -26,6 +27,8 @@ module.exports = {
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     }
+
+    
 };
 
 
